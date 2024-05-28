@@ -3,14 +3,14 @@
 
 void quicksort(int* arr, int b, int e) {
 	if (b < e) {
-		int pivote = arr[(b + e) / 2];
+		int pivot = arr[(b + e) / 2];
 		int l = b, r = e;
 
 		do {
-			while (arr[l] < pivote) {
+			while (arr[l] < pivot) {
 				l++;
 			}
-			while (arr[r] > pivote) {
+			while (arr[r] > pivot) {
 				r--;
 			}
 			if (l <= r) {
